@@ -1,6 +1,6 @@
 <nav class="nav">
   <div class="nav-left">
-    <a class="nav-item logo" routerLink="/">
+    <a class="nav-item logo" routerLink="notes">
       <img src="assets/images/ang.png" width="30px" alt="Firestarter Angular4 Demo App"/> Angular Social
     </a>
   </div>
@@ -16,15 +16,14 @@
   <!-- This "nav-menu" is hidden on mobile -->
   <!-- Add the modifier "is-active" to display it on mobile -->
   <div class="nav-right nav-menu" [ngClass]="{'is-active': show}">
-    <a class="nav-item" routerLink="/login">
-      Login
-    </a>
+   
     <a class="nav-item" routerLink="/notes">
       Feed
     </a>
     
     <a class="nav-item" routerLink="/uploads">
-      File Uploads
+      Cover Photo
     </a>
+   
   </div>
 </nav>
