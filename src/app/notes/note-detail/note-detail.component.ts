@@ -23,17 +23,27 @@ export class NoteDetailComponent {
       console.error('Note missing ID!');
     }
   }
+<<<<<<< HEAD
 
   dislike(val: number) {
     if (this.note.id) {
       this.noteService.updateNote(this.note.id, { dislike: val +1 });
+=======
+  
+  addDislikeToNote(val: number) {
+    if (this.note.id) {
+      this.noteService.updateNote(this.note.id, { dislike: val + 1 });
+>>>>>>> 7852f9914fc66f7d3090ca5df9642f2ac7314651
     } else {
       console.error('Note missing ID!');
     }
   }
 
+<<<<<<< HEAD
  
 
+=======
+>>>>>>> 7852f9914fc66f7d3090ca5df9642f2ac7314651
   deleteNote(id: string) {
     this.noteService.deleteNote(id);
   }

@@ -61,7 +61,11 @@ export class AuthService {
   private oAuthLogin(provider: firebase.auth.AuthProvider) {
     return this.afAuth.auth.signInWithPopup(provider)
       .then((credential) => {
+<<<<<<< HEAD
         this.notify.update('Welcome to Angular Social!!!', 'success');
+=======
+        this.notify.update('Welcome to AngularSocial!!!', 'success');
+>>>>>>> 7852f9914fc66f7d3090ca5df9642f2ac7314651
         return this.updateUserData(credential.user);
       })
       .catch((error) => this.handleError(error) );
@@ -72,7 +76,11 @@ export class AuthService {
   anonymousLogin() {
     return this.afAuth.auth.signInAnonymously()
       .then((user) => {
+<<<<<<< HEAD
         this.notify.update('Welcome to  Angular Social!!!', 'success');
+=======
+        this.notify.update('Welcome to AngularSocial!!!', 'success');
+>>>>>>> 7852f9914fc66f7d3090ca5df9642f2ac7314651
         return this.updateUserData(user); // if using firestore
       })
       .catch((error) => {
@@ -87,7 +95,11 @@ export class AuthService {
   emailSignUp(email: string, password: string) {
     return this.afAuth.auth.createUserWithEmailAndPassword(email, password)
       .then((user) => {
+<<<<<<< HEAD
         this.notify.update('Welcome to  Angular Social!!!', 'success');
+=======
+        this.notify.update('Welcome to Firestarter!!!', 'success');
+>>>>>>> 7852f9914fc66f7d3090ca5df9642f2ac7314651
         return this.updateUserData(user); // if using firestore
       })
       .catch((error) => this.handleError(error) );
@@ -96,7 +108,11 @@ export class AuthService {
   emailLogin(email: string, password: string) {
     return this.afAuth.auth.signInWithEmailAndPassword(email, password)
       .then((user) => {
+<<<<<<< HEAD
         this.notify.update('Welcome to  Angular Social!!!', 'success')
+=======
+        this.notify.update('Welcome to Firestarter!!!', 'success')
+>>>>>>> 7852f9914fc66f7d3090ca5df9642f2ac7314651
         return this.updateUserData(user); // if using firestore
       })
       .catch((error) => this.handleError(error) );
@@ -131,7 +147,11 @@ export class AuthService {
     const data: User = {
       uid: user.uid,
       email: user.email || null,
+<<<<<<< HEAD
       displayName: user.displayName || 'Unknown User',
+=======
+      displayName: user.displayName || 'nameless user',
+>>>>>>> 7852f9914fc66f7d3090ca5df9642f2ac7314651
       photoURL: user.photoURL || 'https://goo.gl/Fz9nrQ',
     };
     return userRef.set(data);

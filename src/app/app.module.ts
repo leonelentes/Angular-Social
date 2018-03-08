@@ -25,12 +25,18 @@ import { environment } from '../environments/environment';
 import { AngularFireModule } from 'angularfire2';
 export const firebaseConfig = environment.firebaseConfig;
 import { AngularFirestoreModule } from 'angularfire2/firestore';
+<<<<<<< HEAD
 import { UserIntComponent } from './user-int/user-int.component';
+=======
+>>>>>>> 7852f9914fc66f7d3090ca5df9642f2ac7314651
 
 @NgModule({
   declarations: [
     AppComponent,
+<<<<<<< HEAD
     UserIntComponent,
+=======
+>>>>>>> 7852f9914fc66f7d3090ca5df9642f2ac7314651
   ],
   imports: [
     BrowserModule,

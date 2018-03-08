@@ -1,12 +1,24 @@
 <div>
+<<<<<<< HEAD
   
+=======
+>>>>>>> 7852f9914fc66f7d3090ca5df9642f2ac7314651
   <h3>{{ note.content }}</h3>
   <span class="button is-small is-info" (click)='addHeartToNote(note.hearts)'>
     Like <i class="fa fa-thumbs-up"> {{ note.hearts || 0 }} times.</i>
   </span>
+<<<<<<< HEAD
   <span class="button is-small is-warning" (click)='dislike(note.dislike)'>
       Dislike <i class="fa fa-thumbs-down"> {{ note.dislike || 0 }} times.</i>
     </span>
   <span class="button is-small is-danger" (click)='deleteNote(note?.id)'>Delete<i class="fa fa-trash"></i></span>
   
+=======
+  <span class="button is-small is-warning" (click)='addDislikeToNote(note.dislike)'>
+    Dislike <i class="fa fa-thumbs-down"> {{ note.dislike || 0 }} times.</i>
+  </span>
+  <span class="button is-small is-danger" (click)='deleteNote(note?.id)'>Delete<i class="fa fa-trash"></i></span>
+  <p></p>
+  <p></p>
+>>>>>>> 7852f9914fc66f7d3090ca5df9642f2ac7314651
 </div>

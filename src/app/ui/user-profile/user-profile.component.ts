@@ -15,4 +15,3 @@ export class UserProfileComponent {
     this.auth.signOut();
   }
 }
-

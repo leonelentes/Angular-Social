@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <img src="assets/images/1.jpg" height="100px" width="300px" alt="Firestarter Angular4 Demo App"/>
 <h1>Angular Social Feed</h1>
 
@@ -7,6 +8,14 @@
 
 <button class="button is-success" (click)="createNote()" [disabled]="content?.length < 2 || content?.length > 200">
   Add Post
+=======
+<h1>Timeline</h1>
+
+<input [(ngModel)]="content" placeholder="What's on your mind?" class="input">
+
+<button class="button is-success" (click)="createNote()" [disabled]="content?.length < 2 || content?.length > 200">
+  POST
+>>>>>>> 7852f9914fc66f7d3090ca5df9642f2ac7314651
 </button>
 <hr>
 <div *ngFor="let note of notes | async">
