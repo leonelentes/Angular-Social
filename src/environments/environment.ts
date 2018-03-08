@@ -1,11 +1,11 @@
 export const environment = {
     production: false,
     firebaseConfig: {
-        apiKey: "AIzaSyD5AZUcLjUgQd7D_N4VucoNtHSsTFhOU4s",
-        authDomain: "angularsocial-f1ad1.firebaseapp.com",
-        databaseURL: "https://angularsocial-f1ad1.firebaseio.com",
-        projectId: "angularsocial-f1ad1",
-        storageBucket: "angularsocial-f1ad1.appspot.com",
-        messagingSenderId: "800656883270"
+        apiKey: "AIzaSyDpXSxfrlVonQcOXrVJVq2BZTE7XG4xsC4",
+        authDomain: "angularsocial-1e643.firebaseapp.com",
+        databaseURL: "https://angularsocial-1e643.firebaseio.com",
+        projectId: "angularsocial-1e643",
+        storageBucket: "angularsocial-1e643.appspot.com",
+        messagingSenderId: "390581228092"
     }
 };
